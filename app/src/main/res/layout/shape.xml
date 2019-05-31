@@ -6,7 +6,7 @@
     android:layout_height="20sp"
     android:layout_width="10sp">
     <solid android:color="#ffffff"/>
-    <stroke android:width="5dp" android:color="#3BB9FF" />
+    <stroke android:width="3dp" android:color="#3BB9FF" />
     <corners
         android:bottomRightRadius="15dp"
         android:bottomLeftRadius="15dp"

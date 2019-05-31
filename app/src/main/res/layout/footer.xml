@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/footer"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="38dp"
     android:layout_alignParentBottom="true"
     android:background="#3BB9FF"
     android:gravity="center" >
@@ -16,6 +16,6 @@
 
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:textSize="25sp" />
+        android:textSize="23sp" />
 
 </RelativeLayout>

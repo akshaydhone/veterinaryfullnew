@@ -1,9 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-</android.support.constraint.ConstraintLayout>
+
+    <!-- Footer aligned to bottom -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="87dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/t2"
+        android:layout_below="@+id/imageView4"
+        android:text="Treatment"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/footer" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:text="Animal Tag No"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays"
+        android:prompt="@string/tag_prompt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        app:srcCompat="@drawable/i1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="82dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/i2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="112dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView"
+        app:srcCompat="@drawable/i3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="151dp"
+        android:text="AI"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Pregnancy Test"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="33dp"
+        android:text="Calving"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="119dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        app:srcCompat="@drawable/i4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="113dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/i5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="110dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        app:srcCompat="@drawable/i6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="87dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/t2"
+        android:layout_below="@+id/imageView4"
+        android:text="Treatment"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:text="Vaccination"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/imageView4"
+        android:text="Operation"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        app:srcCompat="@drawable/i7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="141dp"
+        android:layout_height="79dp"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-3dp"
+        app:srcCompat="@drawable/i8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="108dp"
+        android:layout_height="79dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView6"
+        app:srcCompat="@drawable/i8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginEnd="0dp"
+        android:text="Sample Testing"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:text="Tag-Retag"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/imageView7"
+        android:text="Dehorning"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="154dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/textView8"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/i8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="Ditsokiya"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="153dp"
+        android:layout_height="71dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignTop="@+id/imageView10"
+        app:srcCompat="@drawable/i11" />
+
+    <TextView
+        android:id="@+id/t13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_toEndOf="@+id/textView6"
+        android:text="Postmortem"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

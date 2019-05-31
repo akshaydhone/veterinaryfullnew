@@ -2,4 +2,20 @@
 
     <string name="app_name">Veterinary app</string>
 
+    <string name="hello">This is an <u>underline</u>.</string>
+
+    <string name="tag_prompt">Choose a Tag</string>
+
+    <string-array name="tag_arrays">
+        <item>Tag 1</item>
+        <item>Tag 2</item>
+        <item>Tag 3</item>
+        <item>Tag 4</item>
+        <item>Tag 5</item>
+        <item>Tag 6</item>
+        <item>Tag 7</item>
+        <item>Tag 8</item>
+    </string-array>
+
+
 </resources>

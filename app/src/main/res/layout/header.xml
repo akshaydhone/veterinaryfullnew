@@ -8,15 +8,11 @@
     android:background="#ffffff"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Veterinary Services"
-        android:fontFamily="monospace"
+   <ImageView
+       android:layout_width="550dp"
+       android:layout_height="50dp"
+       android:src="@drawable/df"/>
 
 
-        android:textColor="#000000"
-        android:textSize="20sp" />
 
 </RelativeLayout>
