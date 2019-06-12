@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Ai">
 
+    <include layout="@layout/footer" />
 
     <TextView
         android:id="@+id/textView11"
@@ -22,13 +23,221 @@
         android:id="@+id/textView14"
         android:layout_width="84dp"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText"
+
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="62dp"
         android:text="AI Date"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="53dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:hint="     18-06-2019"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:text="AI Type"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="179dp"
+        android:text="Bull No"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s1"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays1"
+        android:prompt="@string/tag_prompt1" />
+
+
+    <Spinner
+        android:id="@+id/s2"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/textView16"
+
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays2"
+        android:prompt="@string/tag_prompt2" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="222dp"
+        android:text="Animal Stage"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s3"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView17"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays3"
+        android:prompt="@string/tag_prompt3" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:text="Status"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s4"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView18"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays4"
+        android:prompt="@string/tag_prompt4" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s4"
+        android:text="Estrus Stage"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s5"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/s4"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays5"
+        android:prompt="@string/tag_prompt5" />
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s5"
+        android:text="Straw No"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s6"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView20"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays6"
+        android:prompt="@string/tag_prompt6" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/s6"
+        android:text="Remarks"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_marginTop="-4dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:hint="     Remarks"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/editText2"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/textView14"
+        android:background="@layout/layout"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

@@ -18,4 +18,92 @@
     </string-array>
 
 
+    <string name="tag_prompt1">Choose a Tag</string>
+
+    <string-array name="tag_arrays1">
+        <item>First Time</item>
+        <item>Second Time</item>
+        <item>Third time</item>
+        <item>Fourth Time</item>
+        <item>Fifth Time</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt2">Choose a Tag</string>
+
+    <string-array name="tag_arrays2">
+        <item>B101</item>
+        <item>B102</item>
+        <item>B103</item>
+        <item>B104</item>
+        <item>B105</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt3">Choose a Tag</string>
+
+    <string-array name="tag_arrays3">
+
+        <item>In-Milk</item>
+        <item>Out-of-Milk</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt4">Choose a Tag</string>
+
+    <string-array name="tag_arrays4">
+
+        <item>Fresh</item>
+        <item>Unfresh</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt5">Choose a Tag</string>
+
+    <string-array name="tag_arrays5">
+
+        <item>Mid</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt6">Choose a Tag</string>
+
+    <string-array name="tag_arrays6">
+        <item>1012</item>
+        <item>1013</item>
+        <item>1014</item>
+        <item>1015</item>
+        <item>1016</item>
+
+    </string-array>
+
+
+    <string name="tag_prompt7">Choose a Tag</string>
+
+    <string-array name="tag_arrays7">
+        <item>Positive</item>
+        <item>Negative</item>
+
+
+    </string-array>
+
+
+
+
+    <string name="tag_prompt8">Choose a Tag</string>
+
+    <string-array name="tag_arrays8">
+        <item>Dengue</item>
+        <item>Malaria</item>
+
+
+    </string-array>
+
+
 </resources>

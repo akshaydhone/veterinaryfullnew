@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home" />
-        <activity android:name=".Ai"></activity>
+        <activity android:name=".Ai" />
+        <activity android:name=".Pregnancy" />
+        <activity android:name=".Calving" />
+        <activity android:name=".Treatment"></activity>
     </application>
 
 </manifest>
