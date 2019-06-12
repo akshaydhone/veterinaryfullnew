@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Home extends AppCompatActivity {
     Spinner s1;
     TextView t13;
-    ImageView imageView,imageView3,imageView2;
+    ImageView imageView,imageView3,imageView2,imageView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Home extends AppCompatActivity {
         imageView=(ImageView)findViewById(R.id.imageView);
         imageView3=(ImageView)findViewById(R.id.imageView3);
         imageView2=(ImageView)findViewById(R.id.imageView2);
+        imageView4=(ImageView)findViewById(R.id.imageView4);
 
 
 
@@ -49,6 +50,17 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(Home.this,Calving.class);
+                startActivity(i);
+
+            }
+        });
+
+
+
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Treatment.class);
                 startActivity(i);
 
             }

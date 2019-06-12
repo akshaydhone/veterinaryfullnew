@@ -228,10 +228,10 @@
     <Button
         android:id="@+id/button"
         android:layout_width="159dp"
-        android:layout_height="31dp"
+        android:layout_height="27dp"
         android:layout_below="@+id/editText2"
         android:layout_marginStart="-12dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="11dp"
         android:layout_toEndOf="@+id/textView14"
         android:background="@layout/layout"
         android:text="Save"
