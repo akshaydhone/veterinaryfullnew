@@ -23,7 +23,11 @@
         <activity android:name=".Treatment" />
         <activity android:name=".Vaccination" />
         <activity android:name=".Operation" />
-        <activity android:name=".SampleTesting"></activity>
+        <activity android:name=".SampleTesting" />
+        <activity android:name=".TagRetag" />
+        <activity android:name=".Dehorning" />
+        <activity android:name=".Distokiya" />
+        <activity android:name=".Postmortem"></activity>
     </application>
 
 </manifest>

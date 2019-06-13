@@ -104,4 +104,14 @@
     </string-array>
 
 
+    <string name="tag_prompt9">Choose a Tag</string>
+
+    <string-array name="tag_arrays9">
+        <item>Heart surgery</item>
+        <item>Brain Surgery</item>
+
+
+    </string-array>
+
+
 </resources>

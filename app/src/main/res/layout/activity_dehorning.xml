@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SampleTesting">
-
+    tools:context=".Dehorning">
 
 
     <include layout="@layout/footer" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Sample Testing"
+        android:text="Dehorning"
+        android:textColor="#000000"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#000000"/>
+        android:textStyle="bold" />
 
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="59dp"
-        android:text="Sample Date"
+        android:text="Date"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -49,32 +49,19 @@
         android:inputType="date" />
 
 
-
-
-
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="132dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="124dp"
-        android:text="Sample Type"
+        android:text="Calf Birth Date"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-
-    <Spinner
-        android:id="@+id/s1"
-        android:layout_width="181dp"
-        android:layout_height="39dp"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_alignParentEnd="true"
-        android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/tag_arrays7"
-        android:prompt="@string/tag_prompt7" />
 
     <TextView
         android:id="@+id/textView16"
@@ -85,14 +72,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="179dp"
-        android:text="Sample Charges"
+        android:text="Calf Age"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="186dp"
+        android:layout_width="184dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@+id/textView16"
         android:layout_alignParentEnd="true"
@@ -189,5 +176,16 @@
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="181dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignParentEnd="true"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:hint="  15-06-2017"
+        android:inputType="date" />
 
 </RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Operation">
+    tools:context=".Postmortem">
+
 
 
 
@@ -20,76 +21,41 @@
         android:textSize="23sp"
         android:textStyle="bold" />
 
-
-
-
-
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Operation"
+        android:text="Postmortem"
+        android:textColor="#000000"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#000000"/>
-
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText"
 
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="59dp"
-        android:text="Operation Date"
-        android:hint="13-06-2019"
+        android:text="Bank Name"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-
     <EditText
         android:id="@+id/editText"
-        android:layout_width="176dp"
-        android:layout_height="46dp"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="2dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="53dp"
         android:background="@layout/shape"
         android:ems="10"
-
+        android:hint="     18-06-2019"
         android:inputType="date" />
-
-
-    <Spinner
-        android:id="@+id/s2"
-        android:layout_width="173dp"
-        android:layout_height="39dp"
-
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/tag_arrays8"
-        android:prompt="@string/tag_prompt8" />
-
-    <Spinner
-        android:id="@+id/s3"
-        android:layout_width="173dp"
-        android:layout_height="39dp"
-        android:layout_alignBottom="@+id/textView16"
-
-        android:layout_alignParentEnd="true"
-        android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/tag_arrays9"
-        android:prompt="@string/tag_prompt9" />
-
-
-
 
     <TextView
         android:id="@+id/textView15"
@@ -98,8 +64,8 @@
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="120dp"
-        android:text="Illness Duration"
+        android:layout_marginTop="124dp"
+        android:text="Insurance Company"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -107,132 +73,148 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="168dp"
+        android:layout_width="188dp"
         android:layout_height="wrap_content"
 
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="189dp"
-        android:text="Type of Surgery"
+        android:layout_marginTop="179dp"
+        android:text="Insurance Tag No"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
+
     <TextView
         android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="222dp"
+        android:text="Animal Stage"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:text="Status"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s4"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView18"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays4"
+        android:prompt="@string/tag_prompt4" />
+
+
+    <TextView
+        android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
 
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:text="Disease"
+        android:layout_below="@+id/s4"
+        android:text="Estrus Stage"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="153dp"
-        android:layout_height="wrap_content"
+
+    <Spinner
+        android:id="@+id/s5"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
 
 
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="195dp"
-        android:text="Other disease"
-        android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/s4"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays5"
+        android:prompt="@string/tag_prompt5" />
 
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="153dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
 
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="134dp"
-        android:text="Symptoms"
+        android:layout_below="@+id/s5"
+        android:text="Straw No"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/s6"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView20"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/tag_arrays6"
+        android:prompt="@string/tag_prompt6" />
 
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="153dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
 
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView20"
-        android:layout_marginTop="-124dp"
-        android:text="Precautions"
+        android:layout_below="@+id/s6"
+        android:text="Remarks"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_marginTop="2dp"
+        android:background="@layout/shape"
+        android:ems="10"
+        android:hint="     Remarks"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="159dp"
-        android:layout_height="29dp"
+        android:layout_width="294dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="46dp"
         android:background="@layout/layout"
         android:text="Save"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="178dp"
-        android:layout_height="43dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView15"
-        android:background="@layout/shape"
-        android:ems="10"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="180dp"
-        android:layout_height="41dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="177dp"
-        android:background="@layout/shape"
-        android:ems="10"
-        android:hint="   "
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="182dp"
-        android:layout_height="39dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView20"
-        android:layout_marginTop="-4dp"
-        android:background="@layout/shape"
-
-        android:ems="10"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editText14"
-        android:layout_width="182dp"
-        android:layout_height="38dp"
-        android:layout_alignBottom="@+id/textView21"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="-13dp"
-        android:background="@layout/shape"
-        android:ems="10"
-        android:inputType="text" />
 
 </RelativeLayout>

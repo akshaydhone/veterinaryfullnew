@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Home extends AppCompatActivity {
     Spinner s1;
     TextView t13;
-    ImageView imageView,imageView3,imageView2,imageView4,imageView5,imageView6,imageView7;
+    ImageView imageView,imageView3,imageView2,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9,imageView10,imageView11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,10 @@ public class Home extends AppCompatActivity {
         imageView5=(ImageView)findViewById(R.id.imageView5);
         imageView6=(ImageView)findViewById(R.id.imageView6);
         imageView7=(ImageView)findViewById(R.id.imageView7);
+        imageView8=(ImageView)findViewById(R.id.imageView8);
+        imageView9=(ImageView)findViewById(R.id.imageView9);
+        imageView10=(ImageView)findViewById(R.id.imageView10);
+        imageView11=(ImageView)findViewById(R.id.imageView11);
 
 
 
@@ -93,6 +97,44 @@ public class Home extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+        imageView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,TagRetag.class);
+                startActivity(i);
+            }
+        });
+
+
+        imageView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Dehorning.class);
+                startActivity(i);
+            }
+        });
+
+
+        imageView10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Distokiya.class);
+                startActivity(i);
+            }
+        });
+
+        imageView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Postmortem.class);
+                startActivity(i);
+            }
+        });
+
+
 
 
     }
